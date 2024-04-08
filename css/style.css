@@ -1,0 +1,878 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+
+body{
+    margin: 0%;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+header,h1,h2,h3{
+    font-family: 'Mulish', sans-serif;
+}
+h1{
+    text-align: center;
+}
+/* HEADER */
+header{
+    background-color: #446da5;
+    position: sticky;
+    top: 0px;
+    height: 8vh;
+    z-index: 100;
+}
+header img{
+    height: 100%;
+    padding: 0.5rem 0rem 0.3rem 0rem; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+}
+nav li{
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+    white-space: nowrap;
+}
+nav li:hover{
+    background-color: #375378;
+    transition: background-color 0.8s;
+}
+nav>a{
+    height: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+/* MAIN */
+main{
+    padding: 2rem 0rem;
+    min-height: 74vh;
+}
+/* FOOTER */
+footer{
+    overflow: hidden;
+    background-color: #2e3134;
+    color: white;
+    height: 18vh;
+}
+footer>div{
+    text-align: center;
+    padding-top: 1rem;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+}
+footer a:hover{
+    transition: color 0.5s, background-color 0.5s;
+    background-color: black;
+    color: white;
+}
+footer p{
+    margin: 0.5rem;
+}
+#redes{
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+    margin: auto;
+    padding-bottom: 0rem;
+}
+
+/* TABLAS */
+table{
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px;
+}
+thead{
+    background-color: #e7d6c0;
+}
+td, th{
+    padding: 0.5rem 1rem;
+}
+table td:not(tr>td:last-child),table th,.no_mod{
+    border: 1px solid black;
+    text-align: center;
+}
+.sin_mod tr>td:last-child{
+    border: 1px solid black;
+    text-align: center;
+}
+.mod{
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.mod:hover{
+    background-color: rgb(180, 180, 180);
+}
+.mod:active{
+    box-shadow: #2e3032 3px 3px 6px 0px inset;
+}
+.con_mod>tbody>tr:last-child>td:last-child{
+    box-shadow: rgb(255 255 255) -5px 6px;
+}
+
+/* MENU BUSQUEDAS E INSERCIONES */
+.funcionalidades{
+    background-color: rgba(68, 109, 165, 43%);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-gap: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.funcionalidad{
+    display: block;
+    width: fit-content;
+    background-color: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0%;
+    margin-top: 3rem;
+}
+.funcionalidades a{
+    background-color: white;
+    padding: 0.6rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.funcionalidades a:hover{
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+.funcionalidades a:active, .funcionalidades input[type="submit"]:active{
+    box-shadow: #2e3032 3px 3px 6px 0px inset;
+}
+.funcionalidades>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.funcionalidades form>div>*{
+    margin: 0%;
+}
+.funcionalidades>div>*{
+    margin: 0.3rem;
+}
+.funcionalidades input:not(input[type="text"]){
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+.funcionalidades input:not(input[type="text"]):hover{
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+.funcionalidades input[type="text"]{
+    width: 60%;
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+/* FORMULARIOS */
+.insertar,.modificar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+input,textarea,select{
+    width: max-content;
+    margin: 0.3rem auto 1rem;
+    text-align: center;
+}
+input:not(input[type="file"],.enviar),textarea,select{
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 0.3rem;
+}
+input.numero[type="number"], input.numero[disabled]{
+    padding: 0.3rem 0.3rem 0.3rem 1.3rem;
+}
+input.numero[type="time"]{
+    padding-right: 0rem;
+    padding-left: 1.6rem;
+}
+.enviar{
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.enviar:hover{
+    background-color: rgb(185, 185, 185);
+}
+textarea{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    resize: none;
+    height: 5rem;
+}
+textarea.grande{
+    height: max-content;
+    resize: vertical;
+}
+input.grande{
+    width: 25%;
+}
+
+/* FORMULARIO MODIFICAR */
+img.imagen_mod{
+    display: block;
+    margin: auto;
+    height: 15rem;
+    border: 2px solid #80afc9;
+    border-radius: 30px;
+    margin-bottom: 0.7rem;
+}
+/* ACCESO */
+#acceso{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0%;
+    height: 85.4vh;
+}
+#acceso form{
+    grid-row: 2;
+    background-color: rgba(68, 109, 165, 43%);
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#acceso .notificacion{
+    grid-row: 3;
+    align-self: start;
+}
+#acceso form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+#acceso form div input{
+    outline: none;
+    border-width: 0px;
+    margin: 0.3rem 0px 0px 0px;
+    width: 13rem;
+    text-align: left;
+    padding-left: 0.8rem;
+}
+#acceso span{
+    display: flex;
+    align-items: center;
+}
+#acceso span input{
+    margin: 0px 0.3rem 0px 0px;
+}
+#acceso #btn-entrar{
+    display: block;
+    margin: auto;
+    padding: 0.4rem 0.6rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    border-width: 0px;
+}
+#acceso #btn-entrar:hover{
+    cursor: pointer;
+    background-color: #d4d3d3;
+}
+#acceso #btn-entrar:active{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+#volver{
+    font-size: 3rem;
+    color: black;
+    align-self: start;
+    justify-self: start;
+    margin: 2rem 3rem;
+}
+/* INICIO */
+section{
+    width: 70%;
+    margin: auto;
+}
+section h2{
+    position: relative;
+}
+section h2:not(#landing h2)::after{
+    content: "";
+    width: 2rem;
+    height: 5px;
+    background-color: #375378;
+    position: absolute;
+    left: -10px;
+    bottom: -3px;
+}
+/* noticias */
+#noti{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#noti h2{
+    width: 100%;
+}
+#noti .ultima_noti{
+    width: 32%;
+    position: relative;
+}
+.ultima_noti img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+.ultima_noti h3{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 95px;
+    padding: 0.5rem;
+    margin: auto;
+}
+.ultima_noti a{
+    color: black;
+}
+.ultima_noti a:hover{
+    font-weight: bold;
+}
+/* testimonios */
+#testi>div{
+    margin: auto;
+    width: fit-content;
+}
+#testi>div>p:first-child{
+    font-size: small;
+    padding-left: 2rem;
+}
+#testi>div>p:last-child{
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-top: 0%;
+    font-style: italic;
+}
+/* contacto */
+#contacto form{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+#contacto div{
+    width: 80%;
+    margin: auto;
+}
+#contacto input{
+    width: 100%;
+}
+#contacto textarea{
+    width: 100%;
+    text-align: left;
+}
+#contacto form>input:last-of-type{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+/* SOCIOS */
+/* mostrar */
+#tabla_socios{
+    width: 70%;
+}
+#tabla_socios tr>td:first-child{
+    padding: 0%;
+}
+#tabla_socios img{
+    width: 100%;
+}
+#tabla_socios tr>td:first-child{
+    line-height: 0%;
+    padding: 0%;
+}
+#tabla_socios tr>th:first-child{
+    width: 20rem;
+}
+
+/* PRODUCTOS */
+.mod_prod{
+    padding: 0.25rem;
+}
+
+/* SERVICIOS */
+.mod_serv{
+    padding: 0.25rem;
+}
+
+/* NOTICIAS */
+.noticia_lista{
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 1rem;
+    height: 17rem;
+}
+.noticia_lista>img{
+    width: 35%;
+    object-fit: cover;
+    border-right: 1px solid black;
+}
+.noticia_lista>div{
+    width: 65%;
+    padding: 1rem;
+}
+.cabecera_noticia{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.noticia_lista a{
+    color: black;
+}
+.noticia_lista a:hover{
+    font-weight: bold;
+}
+.noticia_lista p{
+    margin-top: 0%;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* paginado */
+.pasar_pagina{
+    width: 70%;
+    margin: 2rem auto 0rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4rem;
+}
+.pasar_pagina a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    margin:0rem 1rem;
+    position: relative;
+}
+.pasar_pagina a:hover{
+    text-shadow: #474747 3px 2px 2px;
+}
+.primero::after{
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 2px;
+    height: 2rem;
+    left: 129px;
+}
+/* noticia individual */
+.portada{
+    display: block;
+    margin: auto;
+    height: 20rem;
+}
+.info_noticia{
+    margin: auto;
+    width: 50%;
+    text-align: right;
+    font-weight: bold;
+}
+.texto{
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* CITAS */
+#calendario{
+    width: 90%;
+    margin-bottom: 3rem;
+}
+#tabla_citas{
+    width: 70%;
+}
+table>tbody>tr:first-child>td:first-child.tabla_vacia,#tabla_socios>tbody>tr:first-child>td:first-child.tabla_vacia{
+    padding: 0.5rem 1rem;
+    line-height: initial;
+    box-shadow: none;
+    border: 1px solid black;
+    text-align: center;
+}
+#calendario caption{
+    font-size: 5rem;
+}
+#calendario tr,#calendario th{
+    padding: 1rem;
+    font-size: 2rem;
+}
+#calendario td{
+    height: 6rem;
+}
+#calendario th{
+    width: 14.28%;
+}
+.cita{
+    box-shadow: #2e3032 3px 3px 6px 0px inset;
+    background-color: rgb(187, 46, 46);
+    padding: 0%;
+    transition: 0.5s;
+}
+.cita:hover{
+    background-color: rgb(165, 41, 41);
+    color: lightgray;
+}
+.cita a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.cita p{
+    margin: 0%;
+}
+/* cambiar mes */
+caption a{
+    color: black;
+}
+caption a:hover{
+    text-shadow: 4px 4px 2px gray;
+}
+
+/* PHP */
+.notificacion{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.mal{
+    color: rgb(224, 53, 53);
+}
+.bien{
+    color: lawngreen;
+}
+#acceso_denegado{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+/* LANDING */
+#landing{
+    padding: 0rem;
+    background-color: black;
+}
+.section-landing{
+    width: 100%;
+}
+.section-text{
+    box-shadow: 50px 50px 50px 50px rgba(255,255,255,0.8), 50px -50px 50px 50px rgba(255,255,255,0.8), -50px -50px 50px 50px rgba(255,255,255,0.8), -50px 50px 50px 50px rgba(255,255,255,0.8), 0px 0px 50px 10px white;
+    background-color: white;
+    padding: 1.5rem;
+    margin: auto;
+    width: 60%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-text>div{
+    width: 50%;
+}
+.section-text p,.section-text h3{
+    padding: 0.5rem;
+}
+.section-text>div>p:last-child{
+    width: 50%;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-text input{
+    margin: 0%;
+    font-size: large;
+}
+.section-text input:hover{
+    cursor: pointer;
+    background-color: gold;
+    font-weight: bold;
+}
+.section-text p:has(u){
+    margin: 0%;
+}
+.section-text .under{
+    text-decoration: underline;
+    margin-bottom: 0rem;
+}
+.section-text .under+p{
+    margin-top: 0rem;
+}
+.section-text img{
+    height: 100%;
+}
+.cabecera-section{
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
+.cabecera-section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cabecera-section>h2{
+    margin: 0%;
+    font-size: 4rem;
+    text-shadow:
+     3px  3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+    color: #f1f1f1;
+    position: absolute;
+}
+
+#inicio{
+    padding-top: 0%;
+}
+#foto_inicio{
+    height: 50vh;
+    background-image: url("../img/landing/gym.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffcd8c;
+    position: relative;
+}
+#foto_inicio div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#foto_inicio>div>*{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 0.3rem 0.9rem;
+    margin: 0%;
+}
+#foto_inicio a{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-style: italic;
+}
+/* JS */
+#cargando{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+    background-color: white;
+    flex-direction: column;
+}
+#cargando img{
+    aspect-ratio: 1/1;
+    width: 5rem;
+}
+#dia_noche{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0%;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border: none;
+    font-size: 2rem;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+#dia_noche:hover{
+    cursor: pointer;
+}
+.dia{
+    color: yellow;
+}
+.noche{
+    color: blue;
+}
+.modo_noche{
+    background-color: black;
+    color: lightgray;
+    border-color: lightgray;
+}
+.modo_noche #libro>div{
+    background-color: #0f5a83;
+    border-color: lightgray;
+}
+.modo_noche #libro a{
+    color: burlywood;
+}
+.modo_noche *{
+    border-color: lightgray !important;
+}
+.modo_noche .pasar_pagina *{
+    color: lightgray;
+}
+.modo_noche table{
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px;
+}
+.modo_noche thead{
+    background-color: brown;
+}
+.modo_noche .con_mod>tbody>tr:last-child>td:last-child{
+    box-shadow: black -5px 6px;
+}
+.modo_noche input:disabled,.modo_noche textarea:disabled,.modo_noche select:disabled{
+    background-color: rgb(73, 73, 73);
+}
+.modo_noche input,.modo_noche textarea,.modo_noche select{
+    color: lightgray;
+    background-color: black;
+}
+.modo_noche #volver{
+    color: lightgray;
+}
+.modo_noche #acceso form{
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+}
+.modo_noche #acceso #btn-entrar{
+    box-shadow: rgba(189, 189, 189, 0.15) 2.4px 2.4px 3.2px;
+}
+.modo_noche .mod:hover{
+    background-color: rgb(48, 48, 48);
+}
+.modo_noche .funcionalidades a{
+    background-color: black;
+    color: lightgray;
+}
+.modo_noche .funcionalidades a:hover{
+    background-color: rgb(48, 48, 48);
+}
+.modo_noche .funcionalidades input:not(input[type="text"]):hover{
+    background-color: rgb(48, 48, 48);
+}
+.modo_noche .enviar:hover{
+    background-color: rgb(48, 48, 48);
+}
+.modo_noche #acceso #btn-entrar:hover{
+    background-color: rgb(48, 48, 48);
+}
+.modo_noche .mod {
+    background-color: black;
+    color: lightgray;
+}
+.modo_noche caption a{
+    color: lightgray;
+}
+.modo_noche caption a:hover{
+    text-shadow: 4px 4px 2px gray;
+}
+.modo_noche ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.modo_noche .ultima_noti a,.modo_noche .noticia_lista a{
+    color: lightgray;
+}
+.modo_noche .ultima_noti a:hover,.modo_noche .noticia_lista a:hover{
+    color: rgb(235, 235, 235);
+}
+
+#libro{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+#libro>div{
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: lightblue;
+}
+#libro>div>div{
+    height: 15rem;
+    width: fit-content;
+    margin: auto;
+}
+#libro img{
+    border: 1px solid black;
+    height: 100%;
+}
+.otro{
+    padding: 0.5rem;
+    text-transform: uppercase;
+    background-color: #446da5;
+    color: white;
+    margin-left: 2rem;
+    border-radius: 10px;
+    border-width: 1px;
+}
